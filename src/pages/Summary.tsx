@@ -200,75 +200,79 @@ export default function Summary() {
         
       </div>
 
-      {/* Weekly Plan Section */}
-      <div className="bg-[#1A1632] py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-6">
-            Tu plan de pérdida de peso con hipnoterapia
-          </h2>
+{/* Weekly Plan Section */}
+      <div className="bg-[#1A1632] py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-6">
+            Tu plan de pérdida de peso con hipnoterapia
+          </h2>
 
-          <div className="flex justify-center gap-12 mb-12">
-            <div className="text-center">
-              <Gauge className="w-8 h-8 mx-auto mb-2 text-purple-400" />
-              <p className="text-lg">Peso deseado - {targetWeight} kg</p>
-            </div>
-            <div className="text-center">
-              <Star className="w-8 h-8 mx-auto mb-2 text-yellow-400" />
-              <p className="text-lg">Probabilidad de éxito - 96%</p>
-            </div>
-          </div>
+          <div className="flex justify-center gap-12 mb-12">
+            <div className="text-center">
+              <Gauge className="w-8 h-8 mx-auto mb-2 text-purple-400" />
+              <p className="text-lg">Peso deseado - {targetWeight} kg</p>
+            </div>
+            <div className="text-center">
+              <Star className="w-8 h-8 mx-auto mb-2 text-yellow-400" />
+              <p className="text-lg">Probabilidad de éxito - 96%</p>
+            </div>
+          </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Weekly Timeline */}
-            <div className="space-y-8">
-              {weeklyPlan.map((week, index) => (
-                <div key={week.week} className="flex items-start gap-4">
-                  <div className="relative">
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                      index === weeklyPlan.length - 1 ? 'bg-green-500' : 'bg-purple-500'
-                    }`}>
-                      <Check className="w-5 h-5 text-white" />
-                    </div>
-                    {index < weeklyPlan.length - 1 && (
-                      <div className="absolute top-8 left-4 w-0.5 h-16 bg-purple-500/30" />
-                    )}
-                  </div>
-                  <div>
-                    <h3 className="text-purple-400 font-medium">{week.week}</h3>
-                    <h4 className="text-xl font-semibold">{week.title}</h4>
-                    <p className="text-gray-400">{week.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Weekly Timeline */}
+            <div className="space-y-8">
+              {weeklyPlan.map((week, index) => (
+                <div key={week.week} className="flex items-start gap-4">
+                  <div className="relative">
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                      index === weeklyPlan.length - 1 ? 'bg-green-500' : 'bg-purple-500'
+                    }`}>
+                      <Check className="w-5 h-5 text-white" />
+                    </div>
+                    {index < weeklyPlan.length - 1 && (
+                      <div className="absolute top-8 left-4 w-0.5 h-16 bg-purple-500/30" />
+                    )}
+                  </div>
+                  <div>
+                    <h3 className="text-purple-400 font-medium">{week.week}</h3>
+                    <h4 className="text-xl font-semibold">{week.title}</h4>
+                    <p className="text-gray-400">{week.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
 
-           {/* Results Preview */}
-           
+           {/* Results Preview */}
+           
 <div className="space-y-8">
-  <div className="bg-[#0A061E] p-6 rounded-xl">
-    <div className="flex items-center gap-4 mb-4">
-      <Cookie className="w-6 h-6 text-purple-400" />
-      <div>
-        <h4 className="font-semibold">Deseos por comida bloqueados</h4>
-        <p className="text-gray-400">{answers?.food_craving || 'Dulces / chocolate'}</p> {/* Use 'food_craving' */}
-      </div>
-    </div>
-    <div className="flex items-center gap-4 mb-4">
-      <UtensilsCrossed className="w-6 h-6 text-purple-400" />
-      <div>
-        <h4 className="font-semibold">Hábitos alimenticios interrumpidos</h4>
-        <p className="text-gray-400">{answers?.eating_habits || 'Alimentación irregular'}</p> {/* Use 'eating_habits' */}
-      </div>
-    </div>
-    <div className="flex items-center gap-4">
-      <Frown className="w-6 h-6 text-purple-400" />
-      <div>
-        <h4 className="font-semibold">Creencia interna tóxica eliminada</h4>
-        <p className="text-gray-400">{answers?.internal_belief || 'Siento que DEBO limpiar el plato'}</p> {/* Use 'internal_belief' */}
-      </div>
-    </div>
-  </div>
+  <div className="bg-[#0A061E] p-6 rounded-xl">
+    <div className="flex items-center gap-4 mb-4">
+      <Cookie className="w-6 h-6 text-purple-400" />
+      <div>
+        <h4 className="font-semibold">Deseos por comida bloqueados</h4>
+        <p className="text-gray-400">{answers?.food_craving || 'Dulces / chocolate'}</p> {/* Use 'food_craving' */}
+      </div>
+    </div>
+    <div className="flex items-center gap-4 mb-4">
+      <UtensilsCrossed className="w-6 h-6 text-purple-400" />
+      <div>
+        <h4 className="font-semibold">Hábitos alimenticios interrumpidos</h4>
+        <p className="text-gray-400">{answers?.eating_habits || 'Alimentación irregular'}</p> {/* Use 'eating_habits' */}
+      </div>
+    </div>
+    <div className="flex items-center gap-4">
+      <Frown className="w-6 h-6 text-purple-400" />
+      <div>
+        <h4 className="font-semibold">Creencia interna tóxica eliminada</h4>
+        <p className="text-gray-400">{answers?.internal_belief || 'Siento que DEBO limpiar el plato'}</p> {/* Use 'internal_belief' */}
+      </div>
+    </div>
+  </div>
 </div>
+{/* ADICIONE ESTA LINHA AQUI */}
+          </div>
+      </div>
+    </div>
 
 {/* Expert Section */}
 <div className="max-w-7xl mx-auto px-4 py-16">
