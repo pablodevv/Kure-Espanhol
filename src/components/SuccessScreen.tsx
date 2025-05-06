@@ -18,7 +18,7 @@ export default function SuccessScreen() {
           <Brain className="w-full h-full" />
         </motion.div>
 
-        <h1 className="text-4xl font-bold">Seu programa está pronto!</h1>
+        <h1 className="text-4xl font-bold">¡Tu programa está listo!</h1>
         
         <div className="flex justify-center gap-1">
           {Array.from({ length: 5 }).map((_, i) => (
@@ -28,15 +28,15 @@ export default function SuccessScreen() {
 
         <div className="bg-gray-800/30 p-6 rounded-lg">
           <p className="italic text-xl text-gray-300">
-            "É a solução de perda de peso mais fácil que já experimentei. 
-            As sessões noturnas melhoraram muito a qualidade do meu sono e 
-            reduziram significativamente meu estresse."
+            "Es la solución de pérdida de peso más fácil que he probado. 
+            Las sesiones nocturnas han mejorado mucho la calidad de mi sueño y 
+            han reducido significativamente mi estrés."
           </p>
         </div>
 
         <p className="text-gray-300">
-          Enviamos um email com instruções para acessar seu programa personalizado.
-          Por favor, verifique sua caixa de entrada.
+          Enviamos un correo electrónico con instrucciones para acceder a tu programa personalizado.
+          Por favor, revisa tu bandeja de entrada.
         </p>
       </div>
     </motion.div>
