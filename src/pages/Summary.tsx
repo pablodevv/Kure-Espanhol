@@ -269,7 +269,7 @@ export default function Summary() {
     </div>
   </div>
 </div>
-{/* ADICIONE ESTA LINHA AQUI */}
+
           </div>
       </div>
     </div>
