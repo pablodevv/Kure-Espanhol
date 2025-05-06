@@ -12,13 +12,13 @@ export default function Home() {
     navigate('/quiz');
   };
 
-  const defaultLocale = 'pt-BR';
+  const defaultLocale = 'es-CL';
   let currentLocale: string = localStorage.getItem('locale') || defaultLocale;
 
   function setLocale(newLocale: string): void {
     currentLocale = newLocale;
     localStorage.setItem('locale', newLocale);
-    console.log(`Idioma alterado para: ${currentLocale}`);
+    console.log(`Idioma cambiado a: ${currentLocale}`);
   }
 
   useEffect(() => {
@@ -44,19 +44,19 @@ export default function Home() {
         <div className="flex flex-col items-center text-center gap-8">
           <img
             src="https://kureapp.health/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome_hero_image_mobile.303035ac.png&w=1920&q=75"
-            alt="Brain with headphones"
+            alt="Cerebro con audífonos"
             className="w-50 h-50 object-cover mb-8" style={{ marginBottom: '0' }}
           />
 
           <h1 className="text-4xl font-semibold mb-4" style={{ fontSize: '35px', width: '350px', marginBottom: '0' }}>
-            Bariátrica Virtual com Hipnoterapia
+            Banda Gástrica Virtual con Hipnoterapia
           </h1>
           <b style={{ marginBottom: '0', color: 'white' }}><p className="text-gray-400 mb-8" style={{ marginBottom: '0', color: 'white' }}>
-            Sem exercícios ou mudanças na dieta – apenas 15 minutos por dia para começar a ver resultados reais
+            Sin ejercicios ni dietas extremas – solo 15 minutos al día para comenzar a ver resultados reales
           </p></b>
 
           <div className="flex flex-col gap-4 w-full max-w-md">
-            <b style={{ marginBottom: '0' }}><p className="text-lg mb-4" style={{ marginBottom: '0' }}>Comece selecionando seu gênero:</p></b>
+            <b style={{ marginBottom: '0' }}><p className="text-lg mb-4" style={{ marginBottom: '0' }}>Comienza eligiendo tu género:</p></b>
             <div className="grid grid-cols-2 gap-4">
               <button
                 onClick={() => handleGenderSelect('male')}
@@ -68,33 +68,33 @@ export default function Home() {
                 onClick={() => handleGenderSelect('female')}
                 className="px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 hover:opacity-90 transition-opacity" style={{ height: '60px' }}
               >
-                Feminino
+                Femenino
               </button>
             </div>
           </div>
 
           <p className="text-gray-400 mb-8" style={{ marginBottom: '0', color: 'white' }}>
-            Taxa de satisfação de 98% *com base em entrevistas com usuários
+            Tasa de satisfacción del 98% *basado en entrevistas a usuarias
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16" style={{ marginTop: '0' }}>
             <div className="p-6 border border-gray-800 rounded-lg" style={{ marginBottom: '-20px' }}>
               <b style={{ marginBottom: '-20px' }}><p className="text-sm italic mb-4" style={{ marginBottom: '-20px' }}>
-                "71% mais peso perdido com hipnose"
+                "71% más de peso perdido con hipnosis"
               </p></b>
-              <img src="https://kureapp.health/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome_card_1.cff37dae.png&w=256&q=75" alt="MNT Logo" className="h-8" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '30px' }} />
+              <img src="https://kureapp.health/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome_card_1.cff37dae.png&w=256&q=75" alt="Logo MNT" className="h-8" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '30px' }} />
             </div>
             <div className="p-6 border border-gray-800 rounded-lg" style={{ marginBottom: '-20px' }}>
               <b style={{ marginBottom: '-20px' }}><p className="text-sm italic mb-4" style={{ marginBottom: '-20px' }}>
-                "A hipnoterapia oferece vantagem sobre outros métodos de perda de peso"
+                "La hipnoterapia ofrece ventajas frente a otros métodos de pérdida de peso"
               </p></b>
-              <img src="https://kureapp.health/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome_card_2.61ead2ab.png&w=256&q=75" alt="Healthline Logo" className="h-8" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '30px' }} />
+              <img src="https://kureapp.health/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome_card_2.61ead2ab.png&w=256&q=75" alt="Logo Healthline" className="h-8" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '30px' }} />
             </div>
             <div className="p-6 border border-gray-800 rounded-lg" style={{ marginBottom: '-20px' }}>
               <b style={{ marginBottom: '-20px' }}><p className="text-sm italic mb-4" style={{ marginBottom: '-20px' }}>
-                "A hipnoterapia tem sido um segredo bem guardado para perda de peso"
+                "La hipnoterapia ha sido un secreto bien guardado para bajar de peso"
               </p></b>
-              <img src="https://kureapp.health/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome_card_3.35cd9929.png&w=256&q=75" alt="Oprah Logo" className="h-8" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '30px' }} />
+              <img src="https://kureapp.health/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome_card_3.35cd9929.png&w=256&q=75" alt="Logo Oprah" className="h-8" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '30px' }} />
             </div>
           </div>
         </div>
@@ -107,11 +107,11 @@ export default function Home() {
             <span>kure</span>
           </div>
           <div className="flex gap-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-white">Avaliações</a>
-            <a href="#" className="hover:text-white">Gerenciar Assinatura</a>
-            <a href="#" className="hover:text-white">Contato</a>
-            <a href="#" className="hover:text-white">Política de Privacidade</a>
-            <a href="#" className="hover:text-white">Termos e Condições</a>
+            <a href="#" className="hover:text-white">Opiniones</a>
+            <a href="#" className="hover:text-white">Gestionar Suscripción</a>
+            <a href="#" className="hover:text-white">Contacto</a>
+            <a href="#" className="hover:text-white">Política de Privacidad</a>
+            <a href="#" className="hover:text-white">Términos y Condiciones</a>
           </div>
         </div>
       </footer>
