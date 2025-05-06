@@ -48,7 +48,8 @@ export default function InfoPageWithIllustration({
                 />
               ))}
             </div>
-            <span className="text-gray-300">{rating} de 5 usuários recomendam o Kure</span>
+            <span className="text-gray-300">{rating} de 5 usuarios recomiendan Kure</span>
+
           </div>
         )}
 
