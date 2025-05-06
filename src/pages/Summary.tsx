@@ -380,5 +380,4 @@ export default function Summary() {
 </footer>
 
     </div>
-  );
-
+  
