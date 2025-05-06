@@ -21,7 +21,7 @@ export default function LoadingScreen({ messages }: LoadingScreenProps) {
   return (
     <div className="min-h-screen bg-[#0A061E] text-white flex flex-col items-center justify-center p-4">
       <h1 className="text-3xl font-semibold text-center mb-12">
-        Tudo pronto! Aguarde um momento enquanto processamos seus dados...
+        ¡Todo listo! Por favor espera un momento mientras procesamos tus datos...
       </h1>
 
       <div className="w-full max-w-md mb-12">
@@ -55,7 +55,7 @@ export default function LoadingScreen({ messages }: LoadingScreenProps) {
           ))}
         </div>
         <p className="text-center text-gray-200 mb-4">
-          "É a solução mais fácil para perda de peso que já experimentei. As sessões noturnas melhoraram muito a qualidade do meu sono e reduziram significativamente meu estresse."
+          "Es la solución más fácil para perder peso que he probado. Las sesiones nocturnas han mejorado mucho la calidad de mi sueño y reducido significativamente mi estrés."
         </p>
         <div className="flex items-center justify-center gap-2 text-sm text-gray-400">
           <svg
@@ -64,9 +64,10 @@ export default function LoadingScreen({ messages }: LoadingScreenProps) {
           >
             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
           </svg>
-          <span>Usuário verificado</span>
+          <span>Usuario verificado</span>
         </div>
       </div>
     </div>
   );
 }
+
