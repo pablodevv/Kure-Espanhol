@@ -23,7 +23,7 @@ export default function NumberInput({
   unit,
   min,
   max,
-  errorMessage = 'Por favor, insira um valor válido',
+  errorMessage = 'Por favor, ingresa un valor válido',
   validateFn,
 }: NumberInputProps) {
   const [error, setError] = useState('');
@@ -32,7 +32,7 @@ export default function NumberInput({
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = e.target.value;
     
-    // Permite apenas números e um único ponto decimal
+    // Permite solo números y un único punto decimal
     if (!/^\d*\.?\d*$/.test(newValue) && newValue !== '') {
       return;
     }
@@ -67,12 +67,12 @@ export default function NumberInput({
     }
 
     if (min !== undefined && numValue < min) {
-      setError(`O valor deve ser maior que ${min}`);
+      setError(`El valor debe ser mayor que ${min}`);
       return;
     }
 
     if (max !== undefined && numValue > max) {
-      setError(`O valor deve ser menor que ${max}`);
+      setError(`El valor debe ser menor que ${max}`);
       return;
     }
 
@@ -103,7 +103,7 @@ export default function NumberInput({
             onChange={handleInputChange}
             className="w-full p-4 rounded-lg bg-gray-800/50 text-white placeholder-gray-400 
                      border border-gray-700 focus:border-purple-500 focus:outline-none"
-            placeholder={`Digite seu ${label.toLowerCase()}`}
+            placeholder={`Ingresa tu ${label.toLowerCase()}`}
           />
           <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
             {unit}
@@ -115,9 +115,10 @@ export default function NumberInput({
           className="w-full p-4 rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500 
                    hover:opacity-90 transition-opacity"
         >
-          Próximo
+          Siguiente
         </button>
       </form>
     </motion.div>
   );
 }
+
