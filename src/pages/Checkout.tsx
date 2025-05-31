@@ -95,8 +95,8 @@ const comparisonItems = [
   },
   {
     label: 'Precio',
-    kure: { icon: CheckCircle, text: 'R$ 19.29*', color: 'text-green-400' },
-    alternative: { icon: X, text: 'R$ 85.00–300.00 por consulta**', color: 'text-gray-500' }
+    kure: { icon: CheckCircle, text: 'US$19.29*', color: 'text-green-400' },
+    alternative: { icon: X, text: 'US$30–100 por consulta**', color: 'text-gray-500' }
   },
   {
     label: 'Enfoque en la causa raíz',
@@ -425,8 +425,8 @@ const handleGetBottomPlan = () => {
           </div>
 
           <div className="mt-8 text-sm text-gray-400">
-            <p>**Precio promedio de personal trainer en Chile: US$25.000–60.000 por hora/sesión.</p>
-            <p className="ml-4">Precio promedio de nutricionista: US$30.000–80.000 por consulta.</p>
+            <p>** Precio promedio de personal trainer en Chile: US$25–60 por sesión.</p>
+            <p className="ml-4">Precio promedio de nutricionista: US$30–80 por consulta.</p>
           </div>
         </div>
 
