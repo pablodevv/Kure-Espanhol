@@ -50,21 +50,21 @@ const testimonials = [
     date: '27 Jun 2024',
     rating: 5,
     text: 'Kure transformó mi nutrición de una manera que nunca imaginé. Lo recomiendo a cualquiera que busque un "hack" efectivo y duradero para perder peso.',
-    author: 'Juan K.',
+    author: 'Benjamín K.',
     verified: true
   },
   {
     date: '24 Jun 2024',
     rating: 5,
     text: 'Súper satisfecha. Me liberé de la adicción al azúcar. Las sesiones antes de dormir se han convertido en mi ritual nocturno de relajación y pensamiento positivo.',
-    author: 'Laura S.',
+    author: 'Valentina S.',
     verified: true
   },
   {
     date: '19 Jun 2024',
     rating: 5,
     text: 'Experiencia fenomenal. La hipnosis de Kure desbloqueó una nueva versión de mí. Mantener una nutrición saludable ahora es algo natural.',
-    author: 'Elisa D.',
+    author: 'Isidora D.',
     verified: true
   }
 ];
@@ -303,7 +303,7 @@ export default function Summary() {
         para alcanzar el éxito en las transformaciones corporales y nutricionales.
       </p>
       <div className="mb-8">
-        <h4 className="font-semibold">Michele Rocha</h4>
+        <h4 className="font-semibold">Camila Díaz</h4>
         <p className="text-purple-400">Fundadora</p>
       </div>
       <button
