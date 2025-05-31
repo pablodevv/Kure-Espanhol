@@ -9,7 +9,7 @@ const generateChartData = (startWeight: number, targetWeight: number) => {
   const step = difference / 4;
 
   return [
-    { week: 'Começo', kure: startWeight, other: startWeight },
+    { week: 'Inicio', kure: startWeight, other: startWeight },
     { week: 'Semana 2', kure: startWeight - step, other: startWeight - (step * 0.5) },
     { week: 'Semana 4', kure: startWeight - (step * 2), other: startWeight - (step * 0.7) },
     { week: 'Semana 8', kure: targetWeight, other: startWeight - step },
@@ -132,7 +132,7 @@ export default function Summary() {
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-4 h-0.5 bg-gray-500 border-dashed"></div>
-                <b><span className="text-sm">Otros apps de pérdida de peso</span></b>
+                <b><span className="text-sm">Otras aplicaciones para perder peso</span></b>
               </div>
             </div>
             
@@ -141,10 +141,10 @@ export default function Summary() {
           <div>
             <h1 className="font-bold mb-6" style={{ fontSize: '2.2rem' }}>
               Según tus respuestas,
-              puedes alcanzar <span className="text-purple-400">el 85% de tu objetivo en 1 mes</span>
+              puedes lograr <span className="text-purple-400">hasta el 85% de tu objetivo en solo 1 mes</span>
             </h1>
             <p className="text-gray-400 mb-8 lg:mb-0">
-              Esto es lo que prevemos con base en más de 24.000 usuarios con IMC y hábitos alimenticios similares.
+              Esto es lo que proyectamos con base en más de 24.000 usuarios con IMC y hábitos alimenticios similares.
             </p>
             <button
               onClick={() => navigate('/checkout')}
