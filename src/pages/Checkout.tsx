@@ -95,8 +95,8 @@ const comparisonItems = [
   },
   {
     label: 'Precio',
-    kure: { icon: CheckCircle, text: 'US$19.29*', color: 'text-green-400' },
-    alternative: { icon: X, text: 'US$30–100 por consulta**', color: 'text-gray-500' }
+    kure: { icon: CheckCircle, text: 'US$ 19.29*', color: 'text-green-400' },
+    alternative: { icon: X, text: 'US$ 30–100 por consulta**', color: 'text-gray-500' }
   },
   {
     label: 'Enfoque en la causa raíz',
@@ -278,16 +278,16 @@ const handleGetBottomPlan = () => {
                 />
                 <label htmlFor={`${plan.id}${isBottom ? '-bottom' : ''}`}>{plan.title}</label>
                 <div className="mt-1">
-                  <span className="line-through text-gray-500">US${plan.originalPrice}</span>{' '}
-                  <span className="font-bold">US${plan.price}</span>
+                  <span className="line-through text-gray-500">US$ {plan.originalPrice}</span>{' '}
+                  <span className="font-bold">US$ {plan.price}</span>
                 </div>
               </div>
               <div className="text-right">
                 <div>
-                  <span className="line-through text-gray-500">US${plan.originalPricePerDay}</span>
+                  <span className="line-through text-gray-500">US$ {plan.originalPricePerDay}</span>
                 </div>
                 <div>
-                  <span className="font-bold">US${plan.pricePerDay}</span>
+                  <span className="font-bold">US$ {plan.pricePerDay}</span>
                   <span className="text-gray-500 text-sm">/día</span>
                 </div>
               </div>
@@ -425,8 +425,8 @@ const handleGetBottomPlan = () => {
           </div>
 
           <div className="mt-8 text-sm text-gray-400">
-            <p>** Precio promedio de personal trainer en Chile: US$25–60 por sesión.</p>
-            <p className="ml-4">Precio promedio de nutricionista: US$30–80 por consulta.</p>
+            <p>** Precio promedio de personal trainer en Chile: US$ 25–60 por sesión.</p>
+            <p className="ml-4">Precio promedio de nutricionista: US$ 30–80 por consulta.</p>
           </div>
         </div>
 
@@ -484,7 +484,7 @@ const handleGetBottomPlan = () => {
   <div className="grid md:grid-cols-2 gap-8 items-center">
     <div>
       <h2 className="text-3xl mb-4">
-        Elige el plan de 3 meses y recibe un regalo SECRETO de US$19.99
+        Elige el plan de 3 meses y recibe un regalo SECRETO de US$ 19.99
       </h2>
       <p className="text-gray-300">
         El equipo de Kure quiere apoyar tu relación con la comida y tu transformación, ¡así que recibe esta sorpresa GRATIS!
