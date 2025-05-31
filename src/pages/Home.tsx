@@ -56,7 +56,7 @@ export default function Home() {
           </p></b>
 
           <div className="flex flex-col gap-4 w-full max-w-md">
-            <b style={{ marginBottom: '0' }}><p className="text-lg mb-4" style={{ marginBottom: '0' }}>Comienza eligiendo tu género:</p></b>
+            <b style={{ marginBottom: '0' }}><p className="text-lg mb-4" style={{ marginBottom: '0' }}>Empieza eligiendo tu género:</p></b>
             <div className="grid grid-cols-2 gap-4">
               <button
                 onClick={() => handleGenderSelect('male')}
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
 
           <p className="text-gray-400 mb-8" style={{ marginBottom: '0', color: 'white' }}>
-            Tasa de satisfacción del 98% *basado en entrevistas a usuarias
+            ¡98% de satisfacción!* basado en entrevistas reales
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16" style={{ marginTop: '0' }}>
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
             <div className="p-6 border border-gray-800 rounded-lg" style={{ marginBottom: '-20px' }}>
               <b style={{ marginBottom: '-20px' }}><p className="text-sm italic mb-4" style={{ marginBottom: '-20px' }}>
-                "La hipnoterapia ha sido un secreto bien guardado para bajar de peso"
+                "La hipnoterapia ha sido un secreto bien guardado para perder peso"
               </p></b>
               <img src="https://kureapp.health/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome_card_3.35cd9929.png&w=256&q=75" alt="Logo Oprah" className="h-8" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '30px' }} />
             </div>
