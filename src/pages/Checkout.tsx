@@ -29,7 +29,7 @@ const plans: Plan[] = [
     originalPrice: 19.18,
     pricePerDay: 1.37,
     originalPricePerDay: 2.74,
-    link: 'https://app.pushinpay.com.br/service/pay/9EBF0B54-8189-4C0A-BB59-065DA2B5DA88', 
+    link: 'https://pay.hotmart.com/A77093528G?off=2lt5cjo1', 
   },
   {
     id: '1-month',
@@ -39,7 +39,7 @@ const plans: Plan[] = [
     pricePerDay: 0.64,
     originalPricePerDay: 1.28,
     popular: true,
-    link: 'https://app.pushinpay.com.br/service/pay/9EBF0993-C1F6-4F21-A6F3-F1ED04800BF8', 
+    link: 'https://pay.hotmart.com/A77093528G?off=4fwr3k7w', 
   },
   {
     id: '3-month',
@@ -49,7 +49,7 @@ const plans: Plan[] = [
     pricePerDay: 0.31,
     originalPricePerDay: 0.63,
     hasGift: true,
-    link: 'https://app.pushinpay.com.br/service/pay/9EBF06C5-AD8F-447D-9F42-911C349AA2C6', 
+    link: 'https://pay.hotmart.com/A77093528G?off=fjl5kp9h', 
   },
 ];
 
@@ -278,16 +278,16 @@ const handleGetBottomPlan = () => {
                 />
                 <label htmlFor={`${plan.id}${isBottom ? '-bottom' : ''}`}>{plan.title}</label>
                 <div className="mt-1">
-                  <span className="line-through text-gray-500">CLP {plan.originalPrice}</span>{' '}
-                  <span className="font-bold">CLP {plan.price}</span>
+                  <span className="line-through text-gray-500">${plan.originalPrice}</span>{' '}
+                  <span className="font-bold">${plan.price}</span>
                 </div>
               </div>
               <div className="text-right">
                 <div>
-                  <span className="line-through text-gray-500">CLP {plan.originalPricePerDay}</span>
+                  <span className="line-through text-gray-500">${plan.originalPricePerDay}</span>
                 </div>
                 <div>
-                  <span className="font-bold">CLP {plan.pricePerDay}</span>
+                  <span className="font-bold">${plan.pricePerDay}</span>
                   <span className="text-gray-500 text-sm">/día</span>
                 </div>
               </div>
@@ -425,8 +425,8 @@ const handleGetBottomPlan = () => {
           </div>
 
           <div className="mt-8 text-sm text-gray-400">
-            <p>**Precio promedio de personal trainer en Chile: CLP $25.000–60.000 por hora/sesión.</p>
-            <p className="ml-4">Precio promedio de nutricionista: CLP $30.000–80.000 por consulta.</p>
+            <p>**Precio promedio de personal trainer en Chile: $25.000–60.000 por hora/sesión.</p>
+            <p className="ml-4">Precio promedio de nutricionista: $30.000–80.000 por consulta.</p>
           </div>
         </div>
 
@@ -484,7 +484,7 @@ const handleGetBottomPlan = () => {
   <div className="grid md:grid-cols-2 gap-8 items-center">
     <div>
       <h2 className="text-3xl mb-4">
-        Compra el plan de 3 meses y recibe un regalo SECRETO de CLP 19.99
+        Compra el plan de 3 meses y recibe un regalo SECRETO de $19.99
       </h2>
       <p className="text-gray-300">
         El equipo de Kure quiere apoyar tu relación con la comida y tu transformación, ¡así que recibe esta sorpresa GRATIS!
