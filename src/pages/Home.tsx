@@ -52,7 +52,7 @@ export default function Home() {
             Banda Gástrica Virtual con Hipnoterapia
           </h1>
           <b style={{ marginBottom: '0', color: 'white' }}><p className="text-gray-400 mb-8" style={{ marginBottom: '0', color: 'white' }}>
-            Sin ejercicios ni dietas extremas – solo 15 minutos al día para comenzar a ver resultados reales
+            Sin ejercicios ni dietas extremas: solo 15 minutos al día para empezar a ver resultados reales
           </p></b>
 
           <div className="flex flex-col gap-4 w-full max-w-md">
