@@ -311,7 +311,7 @@ const questions = [
   },
   {
     id: 'internal_belief',
-    title: '¿Qué creencia interna más te impide perder peso?',
+    title: '¿Cuál de estas creencias internas te impide más perder peso?',
     subtitle: 'La hipnosis Kure te liberará de esta limitación mental',
     options: [
       { label: 'Me falta fuerza de voluntad', emoji: '😩' },
@@ -324,7 +324,7 @@ const questions = [
   },
   {
     id: 'hypnosis_knowledge',
-    title: '¿Has oído hablar de la hipnosis ayudando a las personas a cambiar su comportamiento?',
+    title: '¿Has oído que la hipnosis puede ayudar a las personas a cambiar su comportamiento?',
     options: [
       { label: 'Sí', emoji: '✅' },
       { label: 'No estoy seguro/a', emoji: '🤔' }
