@@ -216,7 +216,7 @@ const questions = [
   },
   {
     id: 'referral',
-    title: '¿Fuiste recomendado a Kure por un nutricionista o psicólogo TCC?',
+    title: '¿Te recomendaron Kure un nutricionista o un psicólogo TCC?',
     subtitle: 'La hipnosis es un método científicamente comprobado para resolver problemas relacionados con la nutrición y cuestiones psicológicas.',
     options: [
       { label: 'Sí', emoji: '👍' },
