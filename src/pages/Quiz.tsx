@@ -411,8 +411,8 @@ const questions = [
   {
     type: 'number',
     id: 'height',
-    title: '¿Cuál es tu altura?',
-    subtitle: 'Será utilizado para calcular tu IMC y la predicción de pérdida de peso.',
+    title: '¿Cuál es tu estatura?',
+    subtitle: 'Esto se usará para calcular tu IMC y predecir tu pérdida de peso.',
     unit: 'cm',
     min: 120,
     errorMessage: 'Lamentablemente, este producto no es adecuado para usuarios menores de 120 cm.'
@@ -430,7 +430,7 @@ const questions = [
     type: 'number',
     id: 'target_weight',
     title: '¿Cuál es tu peso deseado?',
-    subtitle: 'Esto nos ayudará a personalizar un programa específico para ti. Más del 90% de los usuarios de Kure alcanzan su peso deseado.',
+    subtitle: 'Esto nos ayudará a personalizar un programa específico para ti. Más del 90% de los usuarios de Kure logran su peso deseado.',
     unit: 'kg',
     errorMessage: 'El peso deseado debe ser menor que tu peso actual.'
   },
