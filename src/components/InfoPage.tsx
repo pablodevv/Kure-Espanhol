@@ -31,7 +31,7 @@ export default function InfoPage({ title, children, image, onContinue }: InfoPag
           className="mt-8 px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500
                            hover:opacity-90 transition-opacity text-white font-medium"
         >
-          Entendi
+          Entendido
         </button>
       </div>
     </motion.div>
