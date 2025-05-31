@@ -24,7 +24,7 @@ interface FAQItem {
 const plans: Plan[] = [
   {
     id: '7-day',
-    title: 'Plano de 7 dias',
+    title: 'Plan de 7 dias',
     price: 9.59,
     originalPrice: 19.18,
     pricePerDay: 1.37,
@@ -33,7 +33,7 @@ const plans: Plan[] = [
   },
   {
     id: '1-month',
-    title: 'Plano de 1 mês',
+    title: 'Plan de 1 mês',
     price: 19.29,
     originalPrice: 38.58,
     pricePerDay: 0.64,
@@ -43,7 +43,7 @@ const plans: Plan[] = [
   },
   {
     id: '3-month',
-    title: 'Plano de 3 meses',
+    title: 'Plan de 3 meses',
     price: 28.59,
     originalPrice: 57.19,
     pricePerDay: 0.31,
@@ -54,7 +54,7 @@ const plans: Plan[] = [
 ];
 
 const features = [
-  'Aplicación digital creada por expertos en hipnosis, neurociencia y adicción a la comida',
+  'App digital desarrollada por expertos en hipnosis, neurociencia y adicción alimentaria',
   'Introducción a las sesiones de hipnosis',
   'Sesiones diarias personalizadas de hipnoterapia antes de dormir',
   'Programa especial de 21 días para pérdida de peso acelerada',
@@ -144,7 +144,7 @@ export default function Checkout() {
   },
   {
     question: '¿Es segura la auto-hipnosis?',
-    answer: '¡Sí! La auto-hipnoterapia es un método validado científicamente y completamente seguro. Todas las sesiones fueron desarrolladas por especialistas y siguen protocolos comprobados para lograr resultados profundos con total seguridad.',
+    answer: '¡Sí! La autohipnosis es un método científicamente validado y completamente seguro. Todas las sesiones fueron desarrolladas por especialistas y siguen protocolos comprobados para lograr resultados profundos con total seguridad.',
     isOpen: false
   },
   {
@@ -154,7 +154,7 @@ export default function Checkout() {
   },
   {
     question: '¿Es segura la compra?',
-    answer: '¡Totalmente! Utilizamos plataformas de pago 100% seguras con encriptación avanzada, igual que las grandes tiendas en línea. Además, tienes una garantía de reembolso total si decides que Kure no es para ti.',
+    answer: '¡Totalmente! Usamos plataformas de pago 100 % seguras, con cifrado avanzado, igual que las grandes tiendas en línea. Además, tienes una garantía de reembolso total si decides que Kure no es para ti, te devolvemos tu dinero.',
     isOpen: false
   },
   {
@@ -164,7 +164,7 @@ export default function Checkout() {
   },
   {
     question: '¿Qué pasa si me duermo durante la sesión?',
-    answer: 'Es completamente normal y seguro quedarse dormida durante una sesión. De hecho, es una señal de que entraste en un estado profundo de relajación, donde la hipnosis es más efectiva. Si quieres repetir la sesión, puedes hacerlo fácilmente desde la app Kure.',
+    answer: 'Es completamente normal y seguro quedarse dormida durante una sesión. De hecho, es una señal de que entraste en un estado profundo de relajación, donde la hipnosis es más efectiva. Si quieres repetir la sesión, puedes hacerlo fácilmente en la app de Kure.',
     isOpen: false
   }
 ]);
@@ -315,11 +315,11 @@ const handleGetBottomPlan = () => {
 
 
         <div className="text-center mt-4">
-  <p className="text-sm mb-4">Checkout seguro garantizado</p>
+  <p className="text-sm mb-4">Pago seguro garantizado</p>
   <div className="flex justify-center items-center gap-4">
     <img
       src="https://kureapp.health/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsafe_checkout_brands.63412609.png&w=2048&q=75"
-      alt="Métodos de pago"
+      alt="Medios de pago"
       className="h-8"
     />
   </div>
@@ -357,9 +357,9 @@ const handleGetBottomPlan = () => {
     <div className="flex gap-4">
       <Shield className="w-12 h-12 text-purple-400" />
       <div>
-        <h3 className="text-xl mb-2">Garantía sin riesgos</h3>
+        <h3 className="text-xl mb-2">Garantía sin riesgo</h3>
         <p className="text-gray-300">
-          ¿No ves resultados? Ponte en contacto con nuestro equipo de soporte y te reembolsaremos tu plan en cualquier momento, sin hacer preguntas.
+          Si no ves resultados ponte en contacto con nuestro equipo de soporte y te reembolsaremos tu plan en cualquier momento, sin hacer preguntas.
         </p>
       </div>
     </div>
@@ -484,7 +484,7 @@ const handleGetBottomPlan = () => {
   <div className="grid md:grid-cols-2 gap-8 items-center">
     <div>
       <h2 className="text-3xl mb-4">
-        Compra el plan de 3 meses y recibe un regalo SECRETO de US$19.99
+        Elige el plan de 3 meses y recibe un regalo SECRETO de US$19.99
       </h2>
       <p className="text-gray-300">
         El equipo de Kure quiere apoyar tu relación con la comida y tu transformación, ¡así que recibe esta sorpresa GRATIS!
@@ -528,7 +528,7 @@ const handleGetBottomPlan = () => {
 
 
         <section className="mt-20 max-w-4xl mx-auto">
-  <h2 className="text-3xl mb-8 text-center">Las personas nos preguntan:</h2>
+  <h2 className="text-3xl mb-8 text-center">Lo que más nos preguntan:</h2>
   <div className="space-y-4">
     {faqItems.map((item, index) => (
       <div key={index} className="bg-[#1B1464] rounded-xl">
