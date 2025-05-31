@@ -103,7 +103,7 @@ export default function NumberInput({
             onChange={handleInputChange}
             className="w-full p-4 rounded-lg bg-gray-800/50 text-white placeholder-gray-400 
                      border border-gray-700 focus:border-purple-500 focus:outline-none"
-            placeholder={`Ingresa tu ${label.toLowerCase()}`}
+            placeholder={`${label.toLowerCase()}`}
           />
           <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
             {unit}
