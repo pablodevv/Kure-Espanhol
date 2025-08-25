@@ -1,4 +1,3 @@
-// src/components/EmailCollection.tsx
 import { useState } from 'react';
 import { Lock } from 'lucide-react';
 
