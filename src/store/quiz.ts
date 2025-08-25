@@ -32,7 +32,7 @@ const initialState = {
   loading: false,
   height: null,
   weight: null,
-  targetWeight: null, // Inicializado como null
+  targetWeight: null, 
   age: null,
   email: null,
 };
