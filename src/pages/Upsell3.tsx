@@ -6,14 +6,13 @@ import { useNavigate } from "react-router-dom"
 
 
 export default function UpsellMenteBlindada() {
-  const [timeLeft, setTimeLeft] = useState(600) // 10 minutos
+  const [timeLeft, setTimeLeft] = useState(600)
   const navigate = useNavigate()
 
 
 
   
 useEffect(() => {
-  // Rola a página para o topo sempre que ela for renderizada
   window.scrollTo(0, 0);
 }, []);
   
@@ -32,7 +31,7 @@ useEffect(() => {
   }
 
   const handleAccept = () => {
-    window.location.href = "https://pay.kirvano.com/3ecc476b-077e-4c6c-8fcd-3528821e2dc6" // substitua pelo seu link real
+    window.location.href = "https://pay.kirvano.com/3ecc476b-077e-4c6c-8fcd-3528821e2dc6" 
   }
 
   const handleDecline = () => {
