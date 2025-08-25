@@ -6,13 +6,12 @@ import { useNavigate } from "react-router-dom"
 
 
 export default function UpsellSeteTecnicas() {
-  const [timeLeft, setTimeLeft] = useState(600) // 10 minutos
+  const [timeLeft, setTimeLeft] = useState(600) 
   const navigate = useNavigate()
 
 
 
 useEffect(() => {
-  // Rola a página para o topo sempre que ela for renderizada
   window.scrollTo(0, 0);
 }, []);
 
@@ -31,7 +30,7 @@ useEffect(() => {
   }
 
   const handleAccept = () => {
-    window.location.href = "https://pay.kirvano.com/612a858a-f115-4dc3-9492-0df68971a759" // substitua pelo link real
+    window.location.href = "https://pay.kirvano.com/612a858a-f115-4dc3-9492-0df68971a759"
   }
 
   const handleDecline = () => {
