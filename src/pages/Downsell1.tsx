@@ -7,11 +7,10 @@ import { useNavigate } from "react-router-dom"
 
 
 export default function DownsellRenovacao3Meses() {
-  const [timeLeft, setTimeLeft] = useState(600) // 10 minutos
+  const [timeLeft, setTimeLeft] = useState(600) 
   const navigate = useNavigate()
 
 useEffect(() => {
-  // Rola a página para o topo sempre que ela for renderizada
   window.scrollTo(0, 0);
 }, []);
 
