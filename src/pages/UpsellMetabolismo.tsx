@@ -7,7 +7,6 @@ export default function UpsellMetabolismo() {
 
 
 useEffect(() => {
-  // Rola a página para o topo sempre que ela for renderizada
   window.scrollTo(0, 0);
 }, []);
 
@@ -91,7 +90,7 @@ useEffect(() => {
           </p>
         </div>
 
-        {/* Depoimentos */}
+        {}
         <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 text-left space-y-4 text-sm text-gray-700 dark:text-gray-300">
           <div className="flex items-center gap-2">
             <UserCircle2 className="w-6 h-6 text-gray-400" />
@@ -116,7 +115,7 @@ useEffect(() => {
           </div>
         </div>
 
-        {/* Botão de Aceite */}
+        {}
         <button
           onClick={handleAccept}
           className="w-full bg-red-500 hover:bg-red-600 text-white text-sm md:text-lg font-semibold py-4 rounded-xl shadow-xl transition-all"
@@ -124,14 +123,14 @@ useEffect(() => {
           SIM! Quero ativar meu metabolismo e ter mais controle ainda hoje 🔥
         </button>
 
-        {/* Bullets de reforço */}
+        {}
         <ul className="text-xs text-gray-500 dark:text-gray-400 mt-4 space-y-1">
           <li>✅ Resultados visíveis em poucos dias</li>
           <li>🔒 Garantia total: se não amar, devolvemos seu dinheiro</li>
           <li>💤 Use antes de dormir, sem esforço</li>
         </ul>
 
-        {/* Botão de Recusa */}
+        {}
         <button
           onClick={handleRefuse}
           className="text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 underline mt-4"
