@@ -1,4 +1,3 @@
-// src/components/LoadingScreen.tsx
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
