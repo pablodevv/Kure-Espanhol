@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { CheckCircle, Gift, Shield, Star, X, HelpCircle, Activity, Smile, Frown, ChevronDown, ChevronUp } from 'lucide-react';
 import { Button } from '../components/Button';
-import { useNavigate } from 'react-router-dom'; // Importe useNavigate do react-router-dom
+import { useNavigate } from 'react-router-dom'; 
 
 interface Plan {
   id: '7-day' | '1-month' | '3-month';
@@ -12,7 +12,7 @@ interface Plan {
   originalPricePerDay: number;
   popular?: boolean;
   hasGift?: boolean;
-  link: string; // Adicione a propriedade 'link'
+  link: string; 
 }
 
 interface FAQItem {
@@ -170,7 +170,7 @@ export default function Checkout() {
 ]);
 
 
-  const navigate = useNavigate(); // Inicialize useNavigate
+  const navigate = useNavigate(); 
 
   
 
