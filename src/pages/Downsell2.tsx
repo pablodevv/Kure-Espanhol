@@ -7,12 +7,11 @@ import { useNavigate } from "react-router-dom"
 
 
 export default function DownsellSessaoUnica() {
-  const [timeLeft, setTimeLeft] = useState(600) // 10 minutos
+  const [timeLeft, setTimeLeft] = useState(600) 
   const navigate = useNavigate()
 
 
 useEffect(() => {
-  // Rola a página para o topo sempre que ela for renderizada
   window.scrollTo(0, 0);
 }, []);
 
@@ -35,7 +34,7 @@ useEffect(() => {
   }
 
   const handleDecline = () => {
-    navigate("/UpsellFinal") // pode ser a tela final do funil
+    navigate("/UpsellFinal") 
   }
 
   return (
