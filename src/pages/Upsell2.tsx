@@ -11,7 +11,6 @@ export default function UpsellPlano6Meses() {
 
 
 useEffect(() => {
-  // Rola a página para o topo sempre que ela for renderizada
   window.scrollTo(0, 0);
 }, []);
 
@@ -40,7 +39,7 @@ useEffect(() => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 flex flex-col items-center justify-start px-4 py-6">
       
-      {/* Barra de progresso */}
+      {}
       <div className="w-full max-w-2xl mb-4">
         <div className="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-2">
           <div className="bg-red-500 h-2 rounded-full transition-all duration-500" style={{ width: '100%' }}></div>
@@ -106,7 +105,7 @@ useEffect(() => {
           </div>
         </div>
 
-        {/* Comparativo visual */}
+        {}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
           <div className="bg-green-50 dark:bg-green-900 p-4 rounded-xl border border-green-200 dark:border-green-700">
             <p className="font-bold text-green-800 dark:text-green-200 mb-1">Com o Plano de 6 Meses:</p>
@@ -126,7 +125,7 @@ useEffect(() => {
           </div>
         </div>
 
-        {/* Call to action */}
+        {}
         <Button
           onClick={handleAccept}
           className="w-full bg-red-500 hover:bg-red-600 text-white text-sm md:text-lg font-semibold py-4 rounded-xl shadow-xl transition-all animate-pulse"
@@ -141,14 +140,14 @@ useEffect(() => {
           Não quero garantir meus resultados a longo prazo
         </button>
 
-        {/* Selo de garantia */}
+        {}
         <div className="mt-6 border border-green-500 rounded-xl p-4 bg-green-50 dark:bg-green-900 text-green-800 dark:text-green-100 text-sm flex items-center gap-3">
   <CheckCircle className="w-5 h-5 text-green-500" />
   Garantia incondicional de 7 dias: se não sentir resultado, devolvemos 100% do seu dinheiro.
 </div>
 
 
-        {/* Depoimentos */}
+        {}
         <div className="mt-8 text-left">
           <h3 className="text-md font-semibold text-gray-800 dark:text-gray-200 mb-2">O que dizem nossos usuários:</h3>
           <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow text-sm text-gray-700 dark:text-gray-300 space-y-2">
